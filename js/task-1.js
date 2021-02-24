@@ -1,32 +1,11 @@
-<ul id="categories">
-  <li class="item">
-    <h2>Животные</h2>
+const categoriesItemRef = document.querySelectorAll('.item');
 
-    <ul>
-      <li>Кот</li>
-      <li>Хомяк</li>
-      <li>Лошадь</li>
-      <li>Попугай</li>
-    </ul>
-  </li>
-  <li class="item">
-    <h2>Продукты</h2>
+console.log(`В списке ${categoriesItemRef.length} категории.`);
 
-    <ul>
-      <li>Хлеб</li>
-      <li>Петрушка</li>
-      <li>Творог</li>
-    </ul>
-  </li>
-  <li class="item">
-    <h2>Технологии</h2>
 
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>Node</li>
-    </ul>
-  </li>
-</ul>
+[...categoriesItemRef].forEach(item => {
+    console.log('Категория:', item.firstElementChild.textContent);
+    const itemsOfCateoriesRef = item.querySelectorAll('li');
+    console.log(`Количество элементов: ${itemsOfCateoriesRef.length}`);
+    
+});
