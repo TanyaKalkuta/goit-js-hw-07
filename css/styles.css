@@ -1,0 +1,25 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-item {
+  display: flex;
+}
+
+.image-item {
+  display: flex;
+  width: 700px;
+  margin-bottom: 30px;
+}
