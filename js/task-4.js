@@ -2,12 +2,12 @@
 let counterValue = 0;
 
 function increment() { 
-  counterValue++;
+  counterValue+=1;
   console.log(counterValue);
 }
 
 function decrement() { 
-  counterValue--; 
+  counterValue-=1; 
    console.log(counterValue);
 }
 
@@ -31,3 +31,7 @@ decrementBtn.addEventListener('click',  () => {
   decrement();
   spanRef.textContent = counterValue;
 });
+
+const counterContainer = document.querySelector('#counter');
+counterContainer.classList.add('counter-container');
+spanRef.classList.add('span-counter')
