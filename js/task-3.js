@@ -39,7 +39,7 @@ const makeListGallery = images
 
 galleryRef.insertAdjacentHTML('beforeend', makeListGallery);
 
-//console.log(makeListGallery);
+
 /* 
 const listImagesRef = images.map(image => {
 

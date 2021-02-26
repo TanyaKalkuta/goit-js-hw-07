@@ -1,42 +1,33 @@
-const createCounterA = function() {
-  /*
-   * Локальная переменная privateValue доступна только в замыкании.
-   * Получить к ней доступ во внешнем коде невозможно.
-   */
-  let counterValue = 0;
 
-  const increment = function() {
-    counterValue += 1;
-    console.log(counterValue);
-  };
+let counterValue = 0;
 
-  return {
-    increment,
-    };
-    
+function increment() { 
+  counterValue++;
+  console.log(counterValue);
+}
+
+function decrement() { 
+  counterValue--; 
+   console.log(counterValue);
+}
+
+
+const spanRef = document.querySelector('#value');
+
+
+const incrementBtn=document.querySelector('button[data-action="increment"]');
+
+
+incrementBtn.addEventListener('click', () => {
+  increment();
+  spanRef.textContent = counterValue;
+});
+
+
+ const decrementBtn=document.querySelector('button[data-action="decrement"]');
  
-};
 
-const createCounterB = function () {
-
-    let counterValue = 0;
-
-    const decrement = function() {
-    counterValue -= 1;
-    console.log(counterValue);
-  };
-
-  return {
-    decrement,
-    };
- };
-
-const counterA = createCounterA();
-counterA.increment(); // 1
-counterA.increment(); // 2
-counterA.increment();//3
-
-const counterB = createCounterB();
-counterB.decrement(); // 1
-counterB.decrement(); // 2
-counterB.decrement(); // 3
+decrementBtn.addEventListener('click',  () => {
+  decrement();
+  spanRef.textContent = counterValue;
+});
