@@ -18,9 +18,15 @@ img {
   display: flex;
 }
 
+#gallery {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
 .image-item {
   display: flex;
-  width: 700px;
+  width: 500px;
   margin-bottom: 30px;
 }
 
@@ -34,4 +40,17 @@ img {
   margin-right: 10px;
   color: brown;
   background-color: chartreuse;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+  margin: 30px;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
 }

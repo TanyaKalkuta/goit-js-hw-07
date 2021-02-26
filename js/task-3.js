@@ -38,6 +38,7 @@ const makeListGallery = images
 
 
 galleryRef.insertAdjacentHTML('beforeend', makeListGallery);
+//galleryRef.classList.add('gal')
 
 
 /* 
