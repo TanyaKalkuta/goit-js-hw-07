@@ -55,3 +55,11 @@ img {
 #validation-input.invalid {
   border-color: #f44336;
 }
+
+.span-abr {
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: brown;
+  background-color: chartreuse;
+}

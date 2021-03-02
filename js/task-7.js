@@ -9,6 +9,7 @@ function onInputRange(event) {
    // console.log(event.currentTarget.value);
     console.log(inputRef.value);
     spanRef.style.fontSize = `${inputRef.value}px`;
+    spanRef.classList.add('span-abr');
     
 }
 
