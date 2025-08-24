@@ -13,6 +13,57 @@ body {
   line-height: 1.5;
 }
 
+#categories {
+  list-style: none;
+  width: 440px;
+  height: 888px;
+  padding: 24px;
+  background-color: #ffffff;
+}
+.categories-list {
+  list-style: none;
+  padding: 0;
+  padding-top: 16px;
+}
+.categories-name {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 4%;
+}
+.categorues-item {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 4%;
+
+  color: #2e2f42;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  background-color: #f6f6fe;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.item {
+  width: 392px;
+  height: 264px;
+  padding: 16px;
+  gap: 16px;
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+.item-second {
+  height: auto;
+}
 img {
   display: block;
   max-width: 100%;
